@@ -14,12 +14,25 @@ namespace PLANILLA_LOVERS
 
         private void nuevousuariobtn_Click(object sender, EventArgs e)
         {
+            // Crear una instancia del segundo formulario
+            NuevoUsuario GoNuevoUser = new NuevoUsuario();
 
+            // Mostrar el segundo formulario
+            GoNuevoUser.Show();
+
+            // Ocultar el formulario actual (Form1)
+            this.Hide();
         }
 
-        private void InicioSesion_Load(object sender, EventArgs e)
+        private void nuevoAdminbtn_Click(object sender, EventArgs e)
         {
+            NuevoAdmin GonuevoAdmin = new NuevoAdmin();
 
+            // Mostrar el segundo formulario
+            GonuevoAdmin.Show();
+
+            // Ocultar el formulario actual (Form1)
+            this.Hide();
         }
     }
 }

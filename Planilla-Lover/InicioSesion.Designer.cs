@@ -114,6 +114,7 @@
             nuevoAdminbtn.TabIndex = 7;
             nuevoAdminbtn.Text = "NUEVO ADMNISTRADOR";
             nuevoAdminbtn.UseVisualStyleBackColor = true;
+            nuevoAdminbtn.Click += nuevoAdminbtn_Click;
             // 
             // InicioSesion
             // 
@@ -132,7 +133,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "InicioSesion";
             Text = "INICIO DE SESIÓN";
-            Load += InicioSesion_Load;
             ResumeLayout(false);
             PerformLayout();
         }

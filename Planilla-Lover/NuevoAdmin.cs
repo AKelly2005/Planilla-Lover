@@ -80,6 +80,7 @@ namespace PLANILLA_LOVERS
             Agregarbtn.TabIndex = 18;
             Agregarbtn.Text = "AGREGAR";
             Agregarbtn.UseVisualStyleBackColor = true;
+            Agregarbtn.Click += Agregarbtn_Click;
             // 
             // label3
             // 
@@ -125,6 +126,19 @@ namespace PLANILLA_LOVERS
             Name = "NuevoAdmin";
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void Agregarbtn_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del segundo formulario
+            InicioSesion GoInicio = new InicioSesion();
+
+            // Mostrar el segundo formulario
+            GoInicio.Show();
+
+            // Ocultar el formulario actual (Form1)
+            this.Hide();
+
         }
     }
 }

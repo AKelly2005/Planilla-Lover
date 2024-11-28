@@ -62,6 +62,7 @@
             button1.TabIndex = 3;
             button1.Text = "Continuar a Inicio de Sesión";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Bienvenido
             // 

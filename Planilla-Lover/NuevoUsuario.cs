@@ -19,12 +19,14 @@ namespace PLANILLA_LOVERS
 
         private void Agregarbtn_Click(object sender, EventArgs e)
         {
+            // Crear una instancia del segundo formulario
+            InicioSesion GoInicio = new InicioSesion();
 
-        }
+            // Mostrar el segundo formulario
+            GoInicio.Show();
 
-        private void NuevoUsuario_Load(object sender, EventArgs e)
-        {
-
+            // Ocultar el formulario actual (Form1)
+            this.Hide();
         }
     }
 }
