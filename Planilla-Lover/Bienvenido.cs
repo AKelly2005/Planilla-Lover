@@ -14,16 +14,18 @@ namespace Planilla_Lover
 {
     public partial class Bienvenido : Form
     {
+        private GestorUsuarios gestorUsuarios;
         public Bienvenido()
         {
             InitializeComponent();
-            
+            gestorUsuarios = new GestorUsuarios();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Enviar al usuario a inicio de Sesion
-            InicioSesion GoInicio = new InicioSesion();
+            InicioSesion GoInicio = new InicioSesion(gestorUsuarios);
 
             // Mostrar Inicio de Sesion
             GoInicio.Show();

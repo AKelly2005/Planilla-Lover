@@ -50,6 +50,7 @@ namespace Planilla_Lover
             listView2.Columns.Add("Neto Obtenido", 100);
         }
 
+        
         private void MostrarEmpleadosConIRMayor()
         {
             // Limpiar el ListView

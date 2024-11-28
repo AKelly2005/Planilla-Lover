@@ -22,5 +22,6 @@ namespace Planilla_Lover
             lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
         }
+
     }
 }

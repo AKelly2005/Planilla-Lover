@@ -14,10 +14,10 @@ namespace PLANILLA_LOVERS
     public partial class NuevoAdmin : Form
     {
         private GestorUsuarios gestorUsuarios;
-        public NuevoAdmin()
+        public NuevoAdmin(GestorUsuarios gestorUsuarios) // Recibe la instancia existente
         {
             InitializeComponent();
-            gestorUsuarios = new GestorUsuarios();
+            this.gestorUsuarios = gestorUsuarios;  // Usar la instancia pasada
         }
 
         private TextBox txtReptir;
@@ -118,7 +118,7 @@ namespace PLANILLA_LOVERS
             // 
             // NuevoAdmin
             // 
-            ClientSize = new Size(944, 503);
+            ClientSize = new Size(944, 464);
             Controls.Add(txtReptir);
             Controls.Add(label4);
             Controls.Add(txtContraseña);
@@ -144,26 +144,26 @@ namespace PLANILLA_LOVERS
             if (string.IsNullOrWhiteSpace(nombre))
             {
                 MessageBox.Show("Por favor ingrese un nombre de usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Salir de la función si el nombre está vacío
+                return;
             }
 
             if (string.IsNullOrWhiteSpace(contraseña))
             {
                 MessageBox.Show("Por favor ingrese una contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Salir de la función si la contraseña está vacía
+                return;
             }
 
             if (string.IsNullOrWhiteSpace(repetirContraseña))
             {
                 MessageBox.Show("Por favor repita la contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Salir de la función si la repetición de la contraseña está vacía
+                return;
             }
 
             // Validar que las contraseñas coincidan
             if (repetirContraseña != contraseña)
             {
                 MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Salir si las contraseñas no coinciden
+                return;
             }
 
             // Si todos los campos son válidos, se procede a agregar el usuario
@@ -175,7 +175,7 @@ namespace PLANILLA_LOVERS
                 gestorUsuarios.AgregarUsuario(nuevoUsuario);
 
                 // Enviar al usuario a inicio de sesión
-                InicioSesion GoInicio = new InicioSesion();
+                InicioSesion GoInicio = new InicioSesion(gestorUsuarios);
 
                 // Mostrar inicio de sesión
                 GoInicio.Show();

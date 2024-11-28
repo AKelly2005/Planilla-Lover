@@ -66,5 +66,10 @@ namespace Planilla_Lover
         {
             usuarios.Add(usuario);
         }
+
+        public List<Usuario> ObtenerUsuarios()
+        {
+            return usuarios;
+        }
     }
 }

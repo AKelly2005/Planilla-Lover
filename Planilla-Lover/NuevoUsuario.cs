@@ -14,10 +14,11 @@ namespace PLANILLA_LOVERS
     public partial class NuevoUsuario : Form
     {
         private GestorUsuarios gestorUsuarios;
-        public NuevoUsuario()
+
+        public NuevoUsuario(GestorUsuarios gestorUsuarios) // Recibe la instancia existente
         {
             InitializeComponent();
-            gestorUsuarios = new GestorUsuarios(); // Asegúrate de inicializar gestorUsuarios
+            this.gestorUsuarios = gestorUsuarios;  // Usar la instancia pasada
         }
 
         private void Agregarbtn_Click(object sender, EventArgs e)
@@ -61,7 +62,7 @@ namespace PLANILLA_LOVERS
                 gestorUsuarios.AgregarUsuario(nuevoUsuario);
 
                 // Enviar al usuario a inicio de sesión
-                InicioSesion GoInicio = new InicioSesion();
+                InicioSesion GoInicio = new InicioSesion(gestorUsuarios);
 
                 // Mostrar inicio de sesión
                 GoInicio.Show();
