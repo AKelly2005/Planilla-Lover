@@ -7,7 +7,7 @@ namespace PLANILLA_LOVERS
 {
     public partial class InicioSesion : Form
     {
-        private GestorUsuarios gestorUsuarios; // Instancia del gestor de usuarios
+        private GestorUsuarios gestorUsuarios; 
         private Planilla<Empleado> planilla;
 
         public InicioSesion(GestorUsuarios gestorUsuarios)
@@ -46,11 +46,8 @@ namespace PLANILLA_LOVERS
                 if (usuarioEncontrado != null)
                 {
                     MessageBox.Show($"Bienvenido, {usuarioEncontrado.Nombre}!");
-
-                    //Acceder aL Menu
                     Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado, planilla);
                     GoMenu.Show();
-                    // Ocultar el formulario actual
                     this.Hide();
                 }
                 else
@@ -72,22 +69,14 @@ namespace PLANILLA_LOVERS
         private void nuevousuariobtn_Click(object sender, EventArgs e)
         {
             NuevoUsuario GoUser = new NuevoUsuario(gestorUsuarios);
-
-            // Mostrar el formulario del Nuevo Usuario
             GoUser.Show();
-
-            // Ocultar el formulario actual
             this.Hide();
         }
 
         private void nuevoAdminbtn_Click(object sender, EventArgs e)
         {
             Acces_Admincs GoAcces = new Acces_Admincs(gestorUsuarios);
-
-            // Mostrar el formulario del Nuevo Usuario
             GoAcces.Show();
-
-            // Ocultar el formulario actual
             this.Hide();
         }
     }

@@ -12,11 +12,10 @@ namespace Planilla_Lover
         private Usuario usuarioEncontrado;
         private Planilla<Empleado> planilla;
 
-        // Modificamos el constructor para recibir la lista de empleados
         public Filtrado1(GestorUsuarios gestorUsuarios, Usuario usuarioEncontrado, Planilla<Empleado> planilla)
         {
             InitializeComponent();
-            this.planilla = planilla; // Asignamos la lista de empleados
+            this.planilla = planilla; 
             this.gestorUsuarios = gestorUsuarios;
             this.usuarioEncontrado = usuarioEncontrado;
             ConfigurarListView1();
@@ -155,7 +154,6 @@ namespace Planilla_Lover
         {
             Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado, planilla);
             GoMenu.Show();
-            // Ocultar el formulario actual
             this.Hide();
         }
     }

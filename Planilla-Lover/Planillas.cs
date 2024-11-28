@@ -24,7 +24,6 @@ namespace Planilla_Lover
             items.Add(item);
         }
 
-        // Cambiar el tipo de retorno a IEnumerable<T> o List<T>
         public IEnumerable<T> ObtenerTodos()
         {
             return items;

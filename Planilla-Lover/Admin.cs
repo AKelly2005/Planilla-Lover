@@ -22,17 +22,16 @@ namespace PLANILLA_LOVERS
             InitializeComponent();
             this.gestorUsuarios = gestorUsuarios;
             this.usuarioEncontrado = usuarioEncontrado;
-            // Inicialización de la planilla
             this.planilla = planilla;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del segundo formulario
+
             Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado, planilla);
-            // Mostrar el segundo formulario
+
             GoMenu.Show();
-            // Ocultar el formulario actual
+
             this.Hide();
         }
 
@@ -74,7 +73,6 @@ namespace PLANILLA_LOVERS
                 return;
             }
 
-            // Creación del objeto empleado
             Empleado empleado = new EmpleadoCompleto
             {
                 Nombre = nombre,
@@ -93,26 +91,13 @@ namespace PLANILLA_LOVERS
             /// Agregar a la planilla
             planilla.Agregar(empleado);
 
-            // Verificar si los empleados están siendo agregados correctamente
-            MostrarEmpleadosEnPlanilla();
-
             // Mostrar mensaje de éxito
             MessageBox.Show("Empleado agregado a la planilla correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            // Mostrar formulario Menu
+
             Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado, planilla);
             GoMenu.Show();
             this.Hide();
         }
-        private void MostrarEmpleadosEnPlanilla()
-        {
-            StringBuilder sb = new StringBuilder();
-
-            foreach (var empleado in planilla.ObtenerTodos()) // Asumiendo que tienes un método ObtenerTodos() en Planilla
-            {
-                sb.AppendLine($"Nombre: {empleado.Nombre}, Cargo: {empleado.Cargo}, Horas Trabajadas: {empleado.HorasTrabajadas}, Tarifa por Hora: {empleado.TarifaPorHora}, Horas Extras: {empleado.HorasExtras}, INSS: {empleado.INSS}, IR: {empleado.IR}, Neto: {empleado.Neto_Obtenido}");
-            }
-
-            MessageBox.Show(sb.ToString(), "Empleados en Planilla", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+      
     }
 }

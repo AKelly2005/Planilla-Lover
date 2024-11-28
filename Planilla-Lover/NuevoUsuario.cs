@@ -58,16 +58,9 @@ namespace PLANILLA_LOVERS
 
             try
             {
-                // Agregar usuario al gestor
                 gestorUsuarios.AgregarUsuario(nuevoUsuario);
-
-                // Enviar al usuario a inicio de sesión
                 InicioSesion GoInicio = new InicioSesion(gestorUsuarios);
-
-                // Mostrar inicio de sesión
                 GoInicio.Show();
-
-                // Ocultar el formulario actual
                 this.Hide();
             }
             catch (Exception ex)

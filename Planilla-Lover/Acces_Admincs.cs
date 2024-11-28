@@ -17,7 +17,7 @@ namespace Planilla_Lover
 
         private GestorUsuarios gestorUsuarios;
         // Código predefinido
-        private const string CodigoCorrecto = "12345"; // Este es el código predefinido
+        private const string CodigoCorrecto = "12345";
 
         public Acces_Admincs(GestorUsuarios gestorUsuarios)
         {
@@ -35,7 +35,7 @@ namespace Planilla_Lover
             {
                 NuevoAdmin nuevoAdminForm = new NuevoAdmin(gestorUsuarios); 
                 nuevoAdminForm.Show();
-                this.Hide(); // Ocultar el formulario actual
+                this.Hide(); 
             }
             else
             {
@@ -48,7 +48,7 @@ namespace Planilla_Lover
         {
             InicioSesion nuevoInicio = new InicioSesion(gestorUsuarios);
             nuevoInicio.Show();
-            this.Hide(); // Ocultar el formulario actual
+            this.Hide();
         }
     }
 }
