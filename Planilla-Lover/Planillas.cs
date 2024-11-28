@@ -7,43 +7,27 @@ using System.Threading.Tasks;
 namespace Planilla_Lover
 {
 
+    // Interfaz para Planilla
     public interface UsPlanilla<T>
     {
         void Agregar(T item);
-        void Eliminar(T item);
-        List<T> ObtenerTodos();
-        T BuscarPorUs(int Usuario);
+        IEnumerable<T> ObtenerTodos();
     }
 
-
+    // Clase Planilla que implementa UsPlanilla
     public class Planilla<T> : UsPlanilla<T> where T : class
     {
-        protected List<T> items = new List<T>();
+        private List<T> items = new List<T>();
 
         public void Agregar(T item)
         {
             items.Add(item);
         }
 
-        public void Eliminar(T item)
-        {
-            items.Remove(item);
-        }
-
-        public List<T> ObtenerTodos()
+        // Cambiar el tipo de retorno a IEnumerable<T> o List<T>
+        public IEnumerable<T> ObtenerTodos()
         {
             return items;
-        }
-
-        public T BuscarPorUs(int usuario)
-        {
-            var property = typeof(T).GetProperty("Usuario");
-            return items.FirstOrDefault(item => (int)property.GetValue(item) == usuario);
-        }
-
-        internal IEnumerable<object> Where(Func<object, bool> value)
-        {
-            throw new NotImplementedException();
         }
     }
 
@@ -56,101 +40,82 @@ namespace Planilla_Lover
         public double HorasExtras { get; set; }
         public double IR { get; set; }
         public double INSS { get; set; }
-        public double TotalDevengado {  get; set; }
+        public double TotalDevengado { get; set; }
         public double Neto_Obtenido { get; set; }
 
+        // Calcula el devengado total
         public double CalcularDevengado()
         {
-            TotalDevengado = HorasTrabajadas * TarifaPorHora + (HorasExtras*(2*TarifaPorHora));
+            TotalDevengado = HorasTrabajadas * TarifaPorHora + (HorasExtras * (2 * TarifaPorHora));
             return TotalDevengado;
         }
 
+        // Calcula el INSS
         public virtual double CalcularINSS()
         {
             INSS = CalcularDevengado() * 0.07; // 7% INSS
             return INSS;
         }
 
+        // Método abstracto para calcular el IR
         public abstract double CalcularIR();
 
-
+        // Calcula el neto obtenido
         public double CalcularNeto()
         {
             Neto_Obtenido = CalcularDevengado() - CalcularINSS() - CalcularIR();
             return Neto_Obtenido;
-                
         }
     }
 
     public class EmpleadoCompleto : Empleado
     {
+        // Implementación del cálculo del IR para un empleado completo
         public override double CalcularIR()
         {
-            {
-                double total = CalcularDevengado() - CalcularINSS();
-                double Anual = total * 12;
-                double porcentaje = 0;
-                double totalIR = 0;
-                double sobreexceso = 0;
-                if (Anual < 100001)
-                {
-                    IR = 0;
-                }
-                else
-                {
-                    if (Anual < 200001)
-                    {
-                        sobreexceso = Anual - 100000;
-                        porcentaje = sobreexceso * 0.15;
-                        totalIR = sobreexceso - porcentaje;
-                        IR = totalIR;
-                    }
-                    else
-                    {
-                        if (Anual < 350000)
-                        {
-                            sobreexceso = Anual - 200000;
-                            porcentaje = sobreexceso * 0.20;
-                            totalIR = 15000 + (sobreexceso - porcentaje);
-                            IR = totalIR;
-                        }
-                        else
-                        {
-                            if (Anual < 500000)
-                            {
-                                sobreexceso = Anual - 350000;
-                                porcentaje = sobreexceso * 0.25;
-                                totalIR = 45000 + (sobreexceso - porcentaje);
-                                IR = totalIR;
-                            }
-                            else
-                            {
-                                if (Anual > 500001)
-                                {
-                                    sobreexceso = Anual - 500000;
-                                    porcentaje = sobreexceso * 0.30;
-                                    totalIR = 82500 + (sobreexceso - porcentaje);
-                                    IR = totalIR;
-                                }
-                            }
-                        }
-                    }
-                }
+            double total = CalcularDevengado() - CalcularINSS();
+            double anual = total * 12;
+            double porcentaje = 0;
+            double totalIR = 0;
+            double sobreexceso = 0;
 
-                return IR;
+            if (anual < 100001)
+            {
+                IR = 0;
             }
-        }
-        public class Administrador : Planilla<Empleado>
-        {
-
-            public void GenerarReporte()
+            else if (anual < 200001)
             {
-                Console.WriteLine("Reporte de Empleados:");
-                foreach (var empleado in items)
+                sobreexceso = anual - 100000;
+                porcentaje = sobreexceso * 0.15;
+                totalIR = sobreexceso - porcentaje;
+                IR = totalIR;
+            }
+            else if (anual < 350000)
+            {
+                sobreexceso = anual - 200000;
+                porcentaje = sobreexceso * 0.20;
+                totalIR = 15000 + (sobreexceso - porcentaje);
+                IR = totalIR;
+            }
+            else if (anual < 500000)
+            {
+                sobreexceso = anual - 350000;
+                porcentaje = sobreexceso * 0.25;
+                totalIR = 45000 + (sobreexceso - porcentaje);
+                IR = totalIR;
+            }
+            else
+            {
+                if (anual > 500001)
                 {
-                    Console.WriteLine($"Nombre: {empleado.Nombre}, Cargo: {empleado.Cargo}");
+                    sobreexceso = anual - 500000;
+                    porcentaje = sobreexceso * 0.30;
+                    totalIR = 82500 + (sobreexceso - porcentaje);
+                    IR = totalIR;
                 }
             }
+
+            return IR;
         }
     }
 }

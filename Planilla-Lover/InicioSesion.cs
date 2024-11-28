@@ -8,11 +8,13 @@ namespace PLANILLA_LOVERS
     public partial class InicioSesion : Form
     {
         private GestorUsuarios gestorUsuarios; // Instancia del gestor de usuarios
+        private Planilla<Empleado> planilla;
 
         public InicioSesion(GestorUsuarios gestorUsuarios)
         {
             InitializeComponent();
             this.gestorUsuarios = gestorUsuarios;
+            planilla = new Planilla<Empleado>();
         }
 
         private void iniciobtn_Click(object sender, EventArgs e)
@@ -46,7 +48,7 @@ namespace PLANILLA_LOVERS
                     MessageBox.Show($"Bienvenido, {usuarioEncontrado.Nombre}!");
 
                     //Acceder aL Menu
-                    Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado);
+                    Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado, planilla);
                     GoMenu.Show();
                     // Ocultar el formulario actual
                     this.Hide();

@@ -3,23 +3,24 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Planilla_Lover
 {
     public partial class Filtrado1 : Form
     {
-        private Planilla<Empleado> empleados;
+        private GestorUsuarios gestorUsuarios;
+        private Usuario usuarioEncontrado;
+        private Planilla<Empleado> planilla;
 
         // Modificamos el constructor para recibir la lista de empleados
-        public Filtrado1(Planilla<Empleado> empleados)
+        public Filtrado1(GestorUsuarios gestorUsuarios, Usuario usuarioEncontrado, Planilla<Empleado> planilla)
         {
             InitializeComponent();
-            this.empleados = empleados; // Asignamos la lista de empleados
+            this.planilla = planilla; // Asignamos la lista de empleados
+            this.gestorUsuarios = gestorUsuarios;
+            this.usuarioEncontrado = usuarioEncontrado;
             ConfigurarListView1();
             ConfigurarListView2();
-            MostrarEmpleadosConIRMayor(); // Mostrar los empleados con IR mayor que 0
-            MostrarEmpleadosSinIR(); // Mostrar los empleados sin IR
         }
 
         private void ConfigurarListView1()
@@ -50,28 +51,48 @@ namespace Planilla_Lover
             listView2.Columns.Add("Neto Obtenido", 100);
         }
 
-        
         private void MostrarEmpleadosConIRMayor()
         {
             // Limpiar el ListView
             listView1.Items.Clear();
 
-            // Filtrar empleados con IR mayor
-            var empleadosConIR = empleados.ObtenerTodos().Where(e => e.IR > 0);
-            foreach (var empleado in empleadosConIR)
+            try
             {
-                var item = new ListViewItem(new[]
+                // Verificar si la lista de empleados está vacía
+                var empleadosConIR = planilla.ObtenerTodos().Cast<Empleado>().ToList();
+                if (empleadosConIR.Count == 0)
                 {
-                    empleado.Nombre,
-                    empleado.Cargo,
-                    empleado.HorasTrabajadas.ToString(),
-                    empleado.TarifaPorHora.ToString("C"),
-                    empleado.HorasExtras.ToString(),
-                    empleado.INSS.ToString("C"),
-                    empleado.IR.ToString("C"),
-                    empleado.Neto_Obtenido.ToString("C")
-                });
-                listView1.Items.Add(item);
+                    MessageBox.Show("No hay empleados disponibles en la lista.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Salir si la lista está vacía
+                }
+
+                // Filtrar empleados con IR mayor a 0
+                var empleadosConIRFiltrados = empleadosConIR.Where(e => e.IR > 0).ToList();
+                if (!empleadosConIRFiltrados.Any())
+                {
+                    MessageBox.Show("No hay empleados con IR mayor a 0.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return; // Salir si no hay empleados con IR
+                }
+
+                foreach (var empleado in empleadosConIRFiltrados)
+                {
+                    var item = new ListViewItem(new[]
+                    {
+                empleado.Nombre,
+                empleado.Cargo,
+                empleado.HorasTrabajadas.ToString(),
+                empleado.TarifaPorHora.ToString("C"),
+                empleado.HorasExtras.ToString(),
+                empleado.INSS.ToString("C"),
+                empleado.IR.ToString("C"),
+                empleado.Neto_Obtenido.ToString("C")
+            });
+                    listView1.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al mostrar empleados con IR mayor: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -80,23 +101,62 @@ namespace Planilla_Lover
             // Limpiar el ListView
             listView2.Items.Clear();
 
-            // Filtrar empleados sin IR
-            var empleadosSinIR = empleados.ObtenerTodos().Where(e => e.IR < 1);
-            foreach (var empleado in empleadosSinIR)
+            try
             {
-                var item = new ListViewItem(new[]
+                // Verificar si la lista de empleados está vacía
+                var empleadosSinIR = planilla.ObtenerTodos().ToList();
+                if (empleadosSinIR.Count == 0)
                 {
-                    empleado.Nombre,
-                    empleado.Cargo,
-                    empleado.HorasTrabajadas.ToString(),
-                    empleado.TarifaPorHora.ToString("C"),
-                    empleado.HorasExtras.ToString(),
-                    empleado.INSS.ToString("C"),
-                    empleado.IR.ToString("C"),
-                    empleado.Neto_Obtenido.ToString("C")
-                });
-                listView2.Items.Add(item);
+                    MessageBox.Show("No hay empleados disponibles en la lista.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Salir si la lista está vacía
+                }
+
+                // Filtrar empleados sin IR
+                var empleadosSinIRFiltrados = empleadosSinIR.Where(e => e.IR <= 0).ToList();
+                if (!empleadosSinIRFiltrados.Any())
+                {
+                    MessageBox.Show("No hay empleados sin IR.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return; // Salir si no hay empleados sin IR
+                }
+
+                foreach (var empleado in empleadosSinIRFiltrados)
+                {
+                    var item = new ListViewItem(new[]
+                    {
+                        empleado.Nombre,
+                        empleado.Cargo,
+                        empleado.HorasTrabajadas.ToString(),
+                        empleado.TarifaPorHora.ToString("C"),
+                        empleado.HorasExtras.ToString(),
+                        empleado.INSS.ToString("C"),
+                        empleado.IR.ToString("C"),
+                        empleado.Neto_Obtenido.ToString("C")
+                    });
+                    listView2.Items.Add(item);
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al mostrar empleados sin IR: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btmMostrarEmpleado1_Click(object sender, EventArgs e)
+        {
+            MostrarEmpleadosConIRMayor();
+        }
+
+        private void btnMostrarEmpleado2_Click(object sender, EventArgs e)
+        {
+            MostrarEmpleadosSinIR();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado, planilla);
+            GoMenu.Show();
+            // Ocultar el formulario actual
+            this.Hide();
         }
     }
 }

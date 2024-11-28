@@ -13,23 +13,26 @@ namespace PLANILLA_LOVERS
 {
     public partial class Admin : Form
     {
-        private GestorUsuarios gestorUsuarios; // Instancia del gestor de usuarios
-        private Usuario usuarioEncontrado; // El usuario actual que ha iniciado sesión
+        private GestorUsuarios gestorUsuarios;
+        private Usuario usuarioEncontrado;
         private Planilla<Empleado> planilla;
-        public Admin()
+
+        public Admin(GestorUsuarios gestorUsuarios, Usuario usuarioEncontrado,Planilla<Empleado> planilla)
         {
             InitializeComponent();
+            this.gestorUsuarios = gestorUsuarios;
+            this.usuarioEncontrado = usuarioEncontrado;
+            // Inicialización de la planilla
+            this.planilla = planilla;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             // Crear una instancia del segundo formulario
-            Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado);
-
+            Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado, planilla);
             // Mostrar el segundo formulario
             GoMenu.Show();
-
-            // Ocultar el formulario actual (Form1)
+            // Ocultar el formulario actual
             this.Hide();
         }
 
@@ -71,31 +74,45 @@ namespace PLANILLA_LOVERS
                 return;
             }
 
-            // Creación del objeto según el tipo
-            Empleado empleado = new EmpleadoCompleto();
-            empleado.Nombre = nombre;
-            empleado.Cargo = Cargo;
-            empleado.HorasTrabajadas = horas;
-            empleado.TarifaPorHora = tarifa;
-            empleado.HorasExtras = horasExtra;
+            // Creación del objeto empleado
+            Empleado empleado = new EmpleadoCompleto
+            {
+                Nombre = nombre,
+                Cargo = Cargo,
+                HorasTrabajadas = horas,
+                TarifaPorHora = tarifa,
+                HorasExtras = horasExtra
+            };
 
-            // Cálculos
-            double devengado = empleado.CalcularDevengado();
-            double inss = empleado.CalcularINSS();
-            double ir = empleado.CalcularIR();
-            double neto = empleado.CalcularNeto();
+            // Cálculos de los valores
+            empleado.CalcularDevengado();
+            empleado.CalcularINSS();
+            empleado.CalcularIR();
+            empleado.CalcularNeto();
 
-            // Agregar el empleado a la planilla
+            /// Agregar a la planilla
             planilla.Agregar(empleado);
 
-            // Crear una instancia del segundo formulario
-            Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado);
+            // Verificar si los empleados están siendo agregados correctamente
+            MostrarEmpleadosEnPlanilla();
 
-            // Mostrar el segundo formulario
+            // Mostrar mensaje de éxito
+            MessageBox.Show("Empleado agregado a la planilla correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Mostrar formulario Menu
+            Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado, planilla);
             GoMenu.Show();
-
-            // Ocultar el formulario actual (Form1)
             this.Hide();
+        }
+        private void MostrarEmpleadosEnPlanilla()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var empleado in planilla.ObtenerTodos()) // Asumiendo que tienes un método ObtenerTodos() en Planilla
+            {
+                sb.AppendLine($"Nombre: {empleado.Nombre}, Cargo: {empleado.Cargo}, Horas Trabajadas: {empleado.HorasTrabajadas}, Tarifa por Hora: {empleado.TarifaPorHora}, Horas Extras: {empleado.HorasExtras}, INSS: {empleado.INSS}, IR: {empleado.IR}, Neto: {empleado.Neto_Obtenido}");
+            }
+
+            MessageBox.Show(sb.ToString(), "Empleados en Planilla", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
