@@ -48,6 +48,7 @@ namespace Planilla_Lover
         public string Cargo { get; set; }
         public double HorasTrabajadas { get; set; }
         public double TarifaPorHora { get; set; }
+        public double HorasExtras { get; set; }
         public double IR { get; set; }
         public double INSS { get; set; }
         public double TotalDevengado {  get; set; }
@@ -55,7 +56,7 @@ namespace Planilla_Lover
 
         public double CalcularDevengado()
         {
-            TotalDevengado = HorasTrabajadas * TarifaPorHora;
+            TotalDevengado = HorasTrabajadas * TarifaPorHora + (HorasExtras*(2*TarifaPorHora));
             return TotalDevengado;
         }
 

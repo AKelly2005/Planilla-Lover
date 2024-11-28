@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            pictureBox1 = new PictureBox();
+            pbImagen = new PictureBox();
             button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbImagen).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -44,19 +44,19 @@
             label1.TabIndex = 1;
             label1.Text = "Bienvenido";
             // 
-            // pictureBox1
+            // pbImagen
             // 
-            pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new Point(288, 115);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(224, 248);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            pbImagen.Image = Properties.Resources.Logo;
+            pbImagen.Location = new Point(288, 115);
+            pbImagen.Name = "pbImagen";
+            pbImagen.Size = new Size(224, 248);
+            pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbImagen.TabIndex = 2;
+            pbImagen.TabStop = false;
             // 
             // button1
             // 
-            button1.Location = new Point(252, 382);
+            button1.Location = new Point(267, 382);
             button1.Name = "button1";
             button1.Size = new Size(266, 56);
             button1.TabIndex = 3;
@@ -70,11 +70,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
-            Controls.Add(pictureBox1);
+            Controls.Add(pbImagen);
             Controls.Add(label1);
             Name = "Bienvenido";
             Text = "Bienvenido";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Load += Bienvenido_Load;
+            ((System.ComponentModel.ISupportInitialize)pbImagen).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -82,7 +83,7 @@
         #endregion
 
         private Label label1;
-        private PictureBox pictureBox1;
+        private PictureBox pbImagen;
         private Button button1;
     }
 }

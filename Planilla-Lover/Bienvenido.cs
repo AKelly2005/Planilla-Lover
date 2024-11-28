@@ -17,6 +17,7 @@ namespace Planilla_Lover
         public Bienvenido()
         {
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,6 +30,11 @@ namespace Planilla_Lover
 
             // Ocultar el formulario actual (Form1)
             this.Hide();
+        }
+
+        private void Bienvenido_Load(object sender, EventArgs e)
+        {
+            pbImagen.Image = Image.FromFile(@"C:\Users\aidan\source\repos\Planilla-Lover\Logo.png");
         }
     }
 }
