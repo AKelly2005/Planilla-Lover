@@ -15,7 +15,7 @@ namespace Planilla_Lover
         T BuscarPorUs(int Usuario);
     }
 
-   
+
     public class Planilla<T> : UsPlanilla<T> where T : class
     {
         protected List<T> items = new List<T>();
@@ -42,74 +42,109 @@ namespace Planilla_Lover
         }
     }
 
-    public class Empleado
+    public abstract class Empleado
     {
-        public int Usuario { get; set; }
         public string Nombre { get; set; }
         public string Cargo { get; set; }
-    }
+        public double HorasTrabajadas { get; set; }
+        public double TarifaPorHora { get; set; }
+        public double IR { get; set; }
+        public double INSS { get; set; }
+        public double TotalDevengado {  get; set; }
+        public double Neto_Obtenido { get; set; }
 
-    
-    public class Administrador : Planilla<Empleado>
-    {
-        
-        public void GenerarReporte()
+        public double CalcularDevengado()
         {
-            Console.WriteLine("Reporte de Empleados:");
-            foreach (var empleado in items)
-            {
-                Console.WriteLine($"Usuario: {empleado.Usuario}, Nombre: {empleado.Nombre}, Cargo: {empleado.Cargo}");
-            }
+            TotalDevengado = HorasTrabajadas * TarifaPorHora;
+            return TotalDevengado;
+        }
+
+        public virtual double CalcularINSS()
+        {
+            INSS = CalcularDevengado() * 0.07; // 7% INSS
+            return INSS;
+        }
+
+        public abstract double CalcularIR();
+
+
+        public double CalcularNeto()
+        {
+            Neto_Obtenido = CalcularDevengado() - CalcularINSS() - CalcularIR();
+            return Neto_Obtenido;
+                
         }
     }
 
-    // Clase Program para interactuar con el usuario
-    public class Programa
+    public class EmpleadoCompleto : Empleado
     {
-        public static void Main()
+        public override double CalcularIR()
         {
-            Administrador administrador = new Administrador();
-
-            Console.WriteLine("¿Cuántos empleados deseas agregar?");
-            int numeroEmpleados;
-
-            // Validación de entrada para cantidad de empleados
-            while (!int.TryParse(Console.ReadLine(), out numeroEmpleados) || numeroEmpleados <= 0)
             {
-                Console.WriteLine("Por favor, ingresa un número válido de empleados.");
-            }
-
-            // Solicitar datos de cada empleado
-            for (int i = 0; i < numeroEmpleados; i++)
-            {
-                Console.WriteLine($"\nIngrese los datos del empleado {i + 1}:");
-
-                Empleado empleado = new Empleado();
-
-                
-                Console.Write("Usuario: ");
-                while (!int.TryParse(Console.ReadLine(), out int usuario) || usuario <= 0)
+                double total = CalcularDevengado() - CalcularINSS();
+                double Anual = total * 12;
+                double porcentaje = 0;
+                double totalIR = 0;
+                double sobreexceso = 0;
+                if (Anual < 100001)
                 {
-                    Console.WriteLine("Por favor, ingresa un Usuario válido.");
+                    IR = 0;
                 }
-                Empleado Usuario = new Empleado();
+                else
+                {
+                    if (Anual < 200001)
+                    {
+                        sobreexceso = Anual - 100000;
+                        porcentaje = sobreexceso * 0.15;
+                        totalIR = sobreexceso - porcentaje;
+                        IR = totalIR;
+                    }
+                    else
+                    {
+                        if (Anual < 350000)
+                        {
+                            sobreexceso = Anual - 200000;
+                            porcentaje = sobreexceso * 0.20;
+                            totalIR = 15000 + (sobreexceso - porcentaje);
+                            IR = totalIR;
+                        }
+                        else
+                        {
+                            if (Anual < 500000)
+                            {
+                                sobreexceso = Anual - 350000;
+                                porcentaje = sobreexceso * 0.25;
+                                totalIR = 45000 + (sobreexceso - porcentaje);
+                                IR = totalIR;
+                            }
+                            else
+                            {
+                                if (Anual > 500001)
+                                {
+                                    sobreexceso = Anual - 500000;
+                                    porcentaje = sobreexceso * 0.30;
+                                    totalIR = 82500 + (sobreexceso - porcentaje);
+                                    IR = totalIR;
+                                }
+                            }
+                        }
+                    }
+                }
 
-                
-                Console.Write("Nombre: ");
-                empleado.Nombre = Console.ReadLine();
-
-                
-                Console.Write("Cargo: ");
-                empleado.Cargo = Console.ReadLine();
-
-                
-                administrador.Agregar(empleado);
+                return IR;
             }
+        }
+        public class Administrador : Planilla<Empleado>
+        {
 
-            
-            Console.WriteLine("\n--- Reporte de Empleados ---");
-            administrador.GenerarReporte();
+            public void GenerarReporte()
+            {
+                Console.WriteLine("Reporte de Empleados:");
+                foreach (var empleado in items)
+                {
+                    Console.WriteLine($"Nombre: {empleado.Nombre}, Cargo: {empleado.Cargo}");
+                }
+            }
         }
     }
-
 }

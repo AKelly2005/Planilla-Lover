@@ -28,6 +28,7 @@ namespace PLANILLA_LOVERS
 
         private void InitializeComponent()
         {
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(NuevoAdmin));
             RepNewContratxt = new TextBox();
             label4 = new Label();
             NewContratxt = new TextBox();
@@ -123,7 +124,9 @@ namespace PLANILLA_LOVERS
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "NuevoAdmin";
+            Text = "Nuevo Admin";
             ResumeLayout(false);
             PerformLayout();
         }

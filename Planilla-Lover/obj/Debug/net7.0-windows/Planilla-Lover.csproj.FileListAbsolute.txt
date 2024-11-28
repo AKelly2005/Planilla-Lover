@@ -20,3 +20,4 @@ C:\Users\aidan\source\repos\Planilla-Lover\Planilla-Lover\obj\Debug\net7.0-windo
 C:\Users\aidan\source\repos\Planilla-Lover\Planilla-Lover\obj\Debug\net7.0-windows\Planilla-Lover.genruntimeconfig.cache
 C:\Users\aidan\source\repos\Planilla-Lover\Planilla-Lover\obj\Debug\net7.0-windows\ref\Planilla-Lover.dll
 C:\Users\aidan\source\repos\Planilla-Lover\Planilla-Lover\obj\Debug\net7.0-windows\Planilla-Lover.sourcelink.json
+C:\Users\aidan\source\repos\Planilla-Lover\Planilla-Lover\obj\Debug\net7.0-windows\Planilla_Lover.Menu.resources
