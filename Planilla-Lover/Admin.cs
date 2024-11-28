@@ -13,6 +13,7 @@ namespace PLANILLA_LOVERS
 {
     public partial class Admin : Form
     {
+        private Planilla<Empleado> planilla;
         public Admin()
         {
             InitializeComponent();
@@ -53,7 +54,10 @@ namespace PLANILLA_LOVERS
             double inss = empleado.CalcularINSS();
             double ir = empleado.CalcularIR();
             double neto = empleado.CalcularNeto();
-                
+
+            // Agregar el empleado a la planilla
+            planilla.Agregar(empleado);
+
             // Crear una instancia del segundo formulario
             Menu GoMenu = new Menu();
 

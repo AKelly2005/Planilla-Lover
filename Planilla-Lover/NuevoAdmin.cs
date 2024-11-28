@@ -139,7 +139,6 @@ namespace PLANILLA_LOVERS
 
             string nombre = txtNombre.Text;
             string contraseña = txtContraseña.Text;
-            string tipoUsuario;
             string repetirContraseña = txtReptir.Text;
 
             Usuario nuevoUsuario = new Administrador(nombre, contraseña);
@@ -151,13 +150,13 @@ namespace PLANILLA_LOVERS
                 gestorUsuarios.AgregarUsuario(nuevoUsuario);
 
 
-                // Crear una instancia del segundo formulario
+                // Enviar al usuario a inicio de Sesion
                 InicioSesion GoInicio = new InicioSesion();
 
-                // Mostrar el segundo formulario
+                // Mostrar Inicio de Sesion
                 GoInicio.Show();
 
-                // Ocultar el formulario actual (Form1)
+                // Ocultar el formulario actual
                 this.Hide();
             }
             else

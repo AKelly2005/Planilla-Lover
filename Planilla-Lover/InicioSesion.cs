@@ -11,35 +11,43 @@ namespace PLANILLA_LOVERS
 
         private void iniciobtn_Click(object sender, EventArgs e)
         {
-            Menu GoMenu = new Menu();
+            //Pedir información del formulario
+            //Verificar que no esten vacios
+            //compararla con la listas de usuarios ya ingresados
+            //si existe continuar con lo el GoMenu
 
-            // Mostrar el segundo formulario
+
+            // Crear una instancia del Menu
+            Menu GoMenu = new Menu();
+            // Mostrar el Menu
             GoMenu.Show();
 
-            // Ocultar el formulario actual (Form1)
+            // Ocultar el Inicio de Sesión
             this.Hide();
         }
 
         private void nuevousuariobtn_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del segundo formulario
+            // Crear una instancia del Nuevo Usuario
             NuevoUsuario GoNuevoUser = new NuevoUsuario();
 
-            // Mostrar el segundo formulario
+            // Mostrar el formulario del Nuevo Usuario
             GoNuevoUser.Show();
 
-            // Ocultar el formulario actual (Form1)
+            // Ocultar el Inicio de Sesión
             this.Hide();
         }
 
         private void nuevoAdminbtn_Click(object sender, EventArgs e)
         {
+
+            // Crear una instancia del Nuevo Admin
             NuevoAdmin GonuevoAdmin = new NuevoAdmin();
 
-            // Mostrar el segundo formulario
+            // Mostrar el formulario del Nuevo Admin
             GonuevoAdmin.Show();
 
-            // Ocultar el formulario actual (Form1)
+            // Ocultar el Inicio de Sesión
             this.Hide();
         }
     }

@@ -22,13 +22,13 @@ namespace Planilla_Lover
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del segundo formulario
+            // Enviar al usuario a inicio de Sesion
             InicioSesion GoInicio = new InicioSesion();
 
-            // Mostrar el segundo formulario
+            // Mostrar Inicio de Sesion
             GoInicio.Show();
 
-            // Ocultar el formulario actual (Form1)
+            // Ocultar el formulario actual
             this.Hide();
         }
 

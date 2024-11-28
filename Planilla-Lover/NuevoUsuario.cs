@@ -23,7 +23,6 @@ namespace PLANILLA_LOVERS
         {
             string nombre = NewUsertxt.Text;
             string contraseña = NewContratxt.Text;
-            string tipoUsuario;
             string repetirContraseña = RepNewContratxt.Text;
 
             Usuario nuevoUsuario = new UsuarioCorriente(nombre, contraseña);
@@ -35,13 +34,13 @@ namespace PLANILLA_LOVERS
                 gestorUsuarios.AgregarUsuario(nuevoUsuario);
 
 
-                // Crear una instancia del segundo formulario
+                // Enviar al usuario a inicio de Sesion
                 InicioSesion GoInicio = new InicioSesion();
 
-                // Mostrar el segundo formulario
+                // Mostrar Inicio de Sesion
                 GoInicio.Show();
 
-                // Ocultar el formulario actual (Form1)
+                // Ocultar el formulario actual
                 this.Hide();
             }
             else
