@@ -1,0 +1,18 @@
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\bin\Debug\net7.0-windows\PLANILLA LOVERS.exe
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\bin\Debug\net7.0-windows\PLANILLA LOVERS.deps.json
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\bin\Debug\net7.0-windows\PLANILLA LOVERS.runtimeconfig.json
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\bin\Debug\net7.0-windows\PLANILLA LOVERS.dll
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\bin\Debug\net7.0-windows\PLANILLA LOVERS.pdb
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA_LOVERS.InicioSesion.resources
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA_LOVERS.NuevoUsuario.resources
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.csproj.GenerateResource.cache
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.AssemblyInfoInputs.cache
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.AssemblyInfo.cs
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.csproj.CoreCompileInputs.cache
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.sourcelink.json
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.dll
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\refint\PLANILLA LOVERS.dll
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.pdb
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\PLANILLA LOVERS.genruntimeconfig.cache
+C:\Users\LIC Arlen Gradiz\Source\Repos\Planilla-Lovers\PLANILLA LOVERS\PLANILLA LOVERS\obj\Debug\net7.0-windows\ref\PLANILLA LOVERS.dll
