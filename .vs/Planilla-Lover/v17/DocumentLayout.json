@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\bienvenido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\bienvenido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\filtrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\filtrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\nuevoadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\nuevoadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\nuevoadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\nuevoadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\nuevousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\nuevousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\filtrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\filtrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\bienvenido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -15,28 +47,16 @@
       "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\filtrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\filtrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\filtrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\filtrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\nuevoadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\nuevoadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\bienvenido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\bienvenido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\planillas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,28 +67,12 @@
       "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\nuevousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\nuevousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\nuevousuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\nuevousuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\nuevousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\nuevousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\nuevoadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\nuevoadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|solutionrelative:planilla-lover\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA4886A-8141-4B6D-B41C-B5E6ABFEB606}|Planilla-Lover\\Planilla-Lover.csproj|c:\\users\\aidan\\source\\repos\\planilla-lover\\planilla-lover\\iniciosesion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,8 +98,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -122,15 +130,15 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "filtrado.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\filtrado.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\filtrado.cs",
@@ -144,44 +152,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\Admin.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.cs",
-              "RelativeToolTip": "Planilla-Lover\\Admin.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwD8AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "NuevoAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoAdmin.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\NuevoAdmin.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoAdmin.cs",
+              "RelativeToolTip": "Planilla-Lover\\NuevoAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T05:06:13.14Z",
+              "WhenOpened": "2024-11-28T07:01:59.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InicioSesion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\InicioSesion.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Planilla-Lover\\InicioSesion.cs [Dise\u00F1o]",
+              "DocumentIndex": 5,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Usuarios.cs",
+              "RelativeToolTip": "Planilla-Lover\\Usuarios.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:26:18.321Z",
+              "WhenOpened": "2024-11-28T06:01:56.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NuevoUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoUsuario.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\NuevoUsuario.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Planilla-Lover\\NuevoUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T03:27:55.038Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NuevoAdmin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoAdmin.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\NuevoAdmin.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoAdmin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Planilla-Lover\\NuevoAdmin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T03:35:46.719Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Admin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\Admin.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Planilla-Lover\\Admin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:01:47.215Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Menu.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Menu.cs",
@@ -193,20 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "filtrado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\filtrado.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\filtrado.cs",
-              "ToolTip": "Planilla-Lover/filtrado.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "Planilla-Lover",
-              "OverriddenToolTip": "Planilla-Lover/filtrado.cs",
-              "WhenOpened": "2024-11-28T04:52:32.947Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Bienvenido.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Bienvenido.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Bienvenido.cs",
@@ -219,32 +227,96 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "filtrado.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\filtrado.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\filtrado.cs",
+              "ToolTip": "Planilla-Lover/filtrado.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenGroupName": "Planilla-Lover",
+              "OverriddenToolTip": "Planilla-Lover/filtrado.cs",
+              "WhenOpened": "2024-11-28T04:52:32.947Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Admin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\Admin.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Planilla-Lover\\Admin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T03:01:47.215Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\Menu.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs",
+              "RelativeToolTip": "Planilla-Lover\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T05:43:09.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InicioSesion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\InicioSesion.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Planilla-Lover\\InicioSesion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T03:26:18.321Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InicioSesion.cs",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\InicioSesion.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.cs",
+              "RelativeToolTip": "Planilla-Lover\\InicioSesion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T03:02:52.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\Admin.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.cs",
+              "RelativeToolTip": "Planilla-Lover\\Admin.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwD8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T05:06:13.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Bienvenido.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Bienvenido.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Bienvenido.cs",
               "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Bienvenido.cs",
               "RelativeToolTip": "Planilla-Lover\\Bienvenido.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAuwCgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T03:05:43.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NuevoAdmin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoAdmin.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\NuevoAdmin.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoAdmin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Planilla-Lover\\NuevoAdmin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:35:46.719Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Planillas.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Planillas.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Planillas.cs",
@@ -257,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Admin.Designer.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Admin.Designer.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Admin.Designer.cs",
@@ -270,32 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "NuevoUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoUsuario.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\NuevoUsuario.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Planilla-Lover\\NuevoUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:27:55.038Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "NuevoAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoAdmin.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\NuevoAdmin.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoAdmin.cs",
-              "RelativeToolTip": "Planilla-Lover\\NuevoAdmin.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAjwI4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:26:55.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Program.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Program.cs",
@@ -308,20 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "NuevoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoUsuario.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\NuevoUsuario.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoUsuario.cs",
-              "RelativeToolTip": "Planilla-Lover\\NuevoUsuario.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:27:27.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "NuevoUsuario.Designer.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\NuevoUsuario.Designer.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\NuevoUsuario.Designer.cs",
@@ -334,20 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "InicioSesion.cs",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\InicioSesion.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.cs",
-              "RelativeToolTip": "Planilla-Lover\\InicioSesion.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:02:52.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "InicioSesion.Designer.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\InicioSesion.Designer.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\InicioSesion.Designer.cs",
@@ -360,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Bienvenido.Designer.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Bienvenido.Designer.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Bienvenido.Designer.cs",
@@ -373,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Resources.Designer.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Properties\\Resources.Designer.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Properties\\Resources.Designer.cs",
@@ -386,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Planilla-Lover",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Planilla-Lover.csproj",
               "RelativeDocumentMoniker": "Planilla-Lover\\Planilla-Lover.csproj",

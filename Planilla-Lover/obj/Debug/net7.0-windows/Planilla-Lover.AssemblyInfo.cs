@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Planilla-Lover")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67fec2143fdf8e5b98951cef4abfb0004dd158da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31933f64e2ce4f8da8293078738c5561fff5b36f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Planilla-Lover")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Planilla-Lover")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

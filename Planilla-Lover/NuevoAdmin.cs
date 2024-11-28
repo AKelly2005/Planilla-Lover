@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Planilla_Lover;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,15 +13,17 @@ namespace PLANILLA_LOVERS
 {
     public partial class NuevoAdmin : Form
     {
+        private GestorUsuarios gestorUsuarios;
         public NuevoAdmin()
         {
             InitializeComponent();
+            gestorUsuarios = new GestorUsuarios();
         }
 
-        private TextBox RepNewContratxt;
+        private TextBox txtReptir;
         private Label label4;
-        private TextBox NewContratxt;
-        private TextBox NewUsertxt;
+        private TextBox txtContraseña;
+        private TextBox txtNombre;
         private Button Agregarbtn;
         private Label label3;
         private Label label2;
@@ -29,23 +32,23 @@ namespace PLANILLA_LOVERS
         private void InitializeComponent()
         {
             ComponentResourceManager resources = new ComponentResourceManager(typeof(NuevoAdmin));
-            RepNewContratxt = new TextBox();
+            txtReptir = new TextBox();
             label4 = new Label();
-            NewContratxt = new TextBox();
-            NewUsertxt = new TextBox();
+            txtContraseña = new TextBox();
+            txtNombre = new TextBox();
             Agregarbtn = new Button();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             SuspendLayout();
             // 
-            // RepNewContratxt
+            // txtReptir
             // 
-            RepNewContratxt.Location = new Point(425, 312);
-            RepNewContratxt.Multiline = true;
-            RepNewContratxt.Name = "RepNewContratxt";
-            RepNewContratxt.Size = new Size(260, 27);
-            RepNewContratxt.TabIndex = 22;
+            txtReptir.Location = new Point(425, 312);
+            txtReptir.Multiline = true;
+            txtReptir.Name = "txtReptir";
+            txtReptir.Size = new Size(260, 27);
+            txtReptir.TabIndex = 22;
             // 
             // label4
             // 
@@ -58,19 +61,19 @@ namespace PLANILLA_LOVERS
             label4.Text = "REPETIR \r\nCONTRASEÑA";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // NewContratxt
+            // txtContraseña
             // 
-            NewContratxt.Location = new Point(425, 248);
-            NewContratxt.Name = "NewContratxt";
-            NewContratxt.Size = new Size(260, 27);
-            NewContratxt.TabIndex = 20;
+            txtContraseña.Location = new Point(425, 248);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(260, 27);
+            txtContraseña.TabIndex = 20;
             // 
-            // NewUsertxt
+            // txtNombre
             // 
-            NewUsertxt.Location = new Point(425, 188);
-            NewUsertxt.Name = "NewUsertxt";
-            NewUsertxt.Size = new Size(260, 27);
-            NewUsertxt.TabIndex = 19;
+            txtNombre.Location = new Point(425, 188);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(260, 27);
+            txtNombre.TabIndex = 19;
             // 
             // Agregarbtn
             // 
@@ -116,10 +119,10 @@ namespace PLANILLA_LOVERS
             // NuevoAdmin
             // 
             ClientSize = new Size(944, 503);
-            Controls.Add(RepNewContratxt);
+            Controls.Add(txtReptir);
             Controls.Add(label4);
-            Controls.Add(NewContratxt);
-            Controls.Add(NewUsertxt);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtNombre);
             Controls.Add(Agregarbtn);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -133,14 +136,35 @@ namespace PLANILLA_LOVERS
 
         private void Agregarbtn_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del segundo formulario
-            InicioSesion GoInicio = new InicioSesion();
 
-            // Mostrar el segundo formulario
-            GoInicio.Show();
+            string nombre = txtNombre.Text;
+            string contraseña = txtContraseña.Text;
+            string tipoUsuario;
+            string repetirContraseña = txtReptir.Text;
 
-            // Ocultar el formulario actual (Form1)
-            this.Hide();
+            Usuario nuevoUsuario = new Administrador(nombre, contraseña);
+           
+
+            // Agregar usuario al gestor
+            if (repetirContraseña == contraseña) 
+            {
+                gestorUsuarios.AgregarUsuario(nuevoUsuario);
+
+
+                // Crear una instancia del segundo formulario
+                InicioSesion GoInicio = new InicioSesion();
+
+                // Mostrar el segundo formulario
+                GoInicio.Show();
+
+                // Ocultar el formulario actual (Form1)
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Contraseñas no coinciden");
+            }
+            
 
         }
     }

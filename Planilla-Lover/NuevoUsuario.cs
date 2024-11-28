@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Planilla_Lover;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace PLANILLA_LOVERS
 {
     public partial class NuevoUsuario : Form
     {
+        private GestorUsuarios gestorUsuarios;
         public NuevoUsuario()
         {
             InitializeComponent();
@@ -19,14 +21,33 @@ namespace PLANILLA_LOVERS
 
         private void Agregarbtn_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del segundo formulario
-            InicioSesion GoInicio = new InicioSesion();
+            string nombre = NewUsertxt.Text;
+            string contraseña = NewContratxt.Text;
+            string tipoUsuario;
+            string repetirContraseña = RepNewContratxt.Text;
 
-            // Mostrar el segundo formulario
-            GoInicio.Show();
+            Usuario nuevoUsuario = new UsuarioCorriente(nombre, contraseña);
 
-            // Ocultar el formulario actual (Form1)
-            this.Hide();
+
+            // Agregar usuario al gestor
+            if (repetirContraseña == contraseña)
+            {
+                gestorUsuarios.AgregarUsuario(nuevoUsuario);
+
+
+                // Crear una instancia del segundo formulario
+                InicioSesion GoInicio = new InicioSesion();
+
+                // Mostrar el segundo formulario
+                GoInicio.Show();
+
+                // Ocultar el formulario actual (Form1)
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Contraseñas no coinciden");
+            }
         }
     }
 }

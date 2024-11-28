@@ -1,3 +1,5 @@
+using Planilla_Lover;
+
 namespace PLANILLA_LOVERS
 {
     public partial class InicioSesion : Form
@@ -9,7 +11,13 @@ namespace PLANILLA_LOVERS
 
         private void iniciobtn_Click(object sender, EventArgs e)
         {
+            Menu GoMenu = new Menu();
 
+            // Mostrar el segundo formulario
+            GoMenu.Show();
+
+            // Ocultar el formulario actual (Form1)
+            this.Hide();
         }
 
         private void nuevousuariobtn_Click(object sender, EventArgs e)

@@ -16,5 +16,11 @@ namespace Planilla_Lover
         {
             InitializeComponent();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+        }
     }
 }
