@@ -13,6 +13,8 @@ namespace PLANILLA_LOVERS
 {
     public partial class Admin : Form
     {
+        private GestorUsuarios gestorUsuarios; // Instancia del gestor de usuarios
+        private Usuario usuarioEncontrado; // El usuario actual que ha iniciado sesión
         private Planilla<Empleado> planilla;
         public Admin()
         {
@@ -22,7 +24,7 @@ namespace PLANILLA_LOVERS
         private void button2_Click(object sender, EventArgs e)
         {
             // Crear una instancia del segundo formulario
-            Menu GoMenu = new Menu();
+            Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado);
 
             // Mostrar el segundo formulario
             GoMenu.Show();
@@ -87,7 +89,7 @@ namespace PLANILLA_LOVERS
             planilla.Agregar(empleado);
 
             // Crear una instancia del segundo formulario
-            Menu GoMenu = new Menu();
+            Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado);
 
             // Mostrar el segundo formulario
             GoMenu.Show();

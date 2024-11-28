@@ -45,10 +45,9 @@ namespace PLANILLA_LOVERS
                 {
                     MessageBox.Show($"Bienvenido, {usuarioEncontrado.Nombre}!");
 
-                    // Crear una instancia del menú
-                    Menu GoMenu = new Menu();
+                    //Acceder aL Menu
+                    Menu GoMenu = new Menu(gestorUsuarios, usuarioEncontrado);
                     GoMenu.Show();
-
                     // Ocultar el formulario actual
                     this.Hide();
                 }

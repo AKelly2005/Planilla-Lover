@@ -35,6 +35,7 @@
             label3 = new Label();
             label4 = new Label();
             btnIr2 = new Button();
+            lblUsuarioTipo = new Label();
             SuspendLayout();
             // 
             // label1
@@ -51,7 +52,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(93, 66);
+            label2.Location = new Point(87, 117);
             label2.Name = "label2";
             label2.Size = new Size(465, 28);
             label2.TabIndex = 3;
@@ -61,7 +62,7 @@
             // 
             lblFecha.AutoSize = true;
             lblFecha.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFecha.Location = new Point(555, 66);
+            lblFecha.Location = new Point(549, 117);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(28, 28);
             lblFecha.TabIndex = 4;
@@ -93,7 +94,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Lucida Fax", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(328, 152);
+            label4.Location = new Point(323, 189);
             label4.Name = "label4";
             label4.Size = new Size(145, 26);
             label4.TabIndex = 8;
@@ -103,7 +104,7 @@
             // btnIr2
             // 
             btnIr2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnIr2.Location = new Point(353, 181);
+            btnIr2.Location = new Point(353, 218);
             btnIr2.Name = "btnIr2";
             btnIr2.Size = new Size(94, 41);
             btnIr2.TabIndex = 7;
@@ -111,11 +112,22 @@
             btnIr2.UseVisualStyleBackColor = true;
             btnIr2.Visible = false;
             // 
+            // lblUsuarioTipo
+            // 
+            lblUsuarioTipo.AutoSize = true;
+            lblUsuarioTipo.Font = new Font("Verdana", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUsuarioTipo.Location = new Point(137, 76);
+            lblUsuarioTipo.Name = "lblUsuarioTipo";
+            lblUsuarioTipo.Size = new Size(30, 41);
+            lblUsuarioTipo.TabIndex = 9;
+            lblUsuarioTipo.Text = " ";
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblUsuarioTipo);
             Controls.Add(label4);
             Controls.Add(btnIr2);
             Controls.Add(label3);
@@ -125,6 +137,7 @@
             Controls.Add(label1);
             Name = "Menu";
             Text = "Menu";
+            Load += Menu_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -138,5 +151,6 @@
         private Label label3;
         private Label label4;
         private Button btnIr2;
+        private Label lblUsuarioTipo;
     }
 }
