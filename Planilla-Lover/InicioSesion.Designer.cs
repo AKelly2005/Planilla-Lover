@@ -120,7 +120,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlLightLight;
+            BackColor = Color.DarkSeaGreen;
             ClientSize = new Size(800, 451);
             Controls.Add(nuevoAdminbtn);
             Controls.Add(contratxt);

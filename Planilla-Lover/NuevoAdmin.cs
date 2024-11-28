@@ -27,6 +27,7 @@ namespace PLANILLA_LOVERS
         private Button Agregarbtn;
         private Label label3;
         private Label label2;
+        private Button button1;
         private Label label1;
 
         private void InitializeComponent()
@@ -40,6 +41,7 @@ namespace PLANILLA_LOVERS
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // txtReptir
@@ -78,7 +80,7 @@ namespace PLANILLA_LOVERS
             // Agregarbtn
             // 
             Agregarbtn.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Agregarbtn.Location = new Point(384, 399);
+            Agregarbtn.Location = new Point(682, 399);
             Agregarbtn.Name = "Agregarbtn";
             Agregarbtn.Size = new Size(187, 29);
             Agregarbtn.TabIndex = 18;
@@ -116,9 +118,22 @@ namespace PLANILLA_LOVERS
             label1.TabIndex = 15;
             label1.Text = "NUEVO ADMINISTRADOR";
             // 
+            // button1
+            // 
+            button1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(52, 399);
+            button1.Name = "button1";
+            button1.Size = new Size(187, 29);
+            button1.TabIndex = 23;
+            button1.Text = "REGRESAR";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // NuevoAdmin
             // 
+            BackColor = Color.BlanchedAlmond;
             ClientSize = new Size(944, 464);
+            Controls.Add(button1);
             Controls.Add(txtReptir);
             Controls.Add(label4);
             Controls.Add(txtContraseña);
@@ -187,6 +202,13 @@ namespace PLANILLA_LOVERS
             {
                 MessageBox.Show($"Error al agregar el usuario: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InicioSesion nuevoInicio = new InicioSesion(gestorUsuarios);
+            nuevoInicio.Show();
+            this.Hide(); // Ocultar el formulario actual
         }
     }
 }

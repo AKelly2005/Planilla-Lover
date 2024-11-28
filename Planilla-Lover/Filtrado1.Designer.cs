@@ -77,6 +77,7 @@
             // btnMostrarEmpleado2
             // 
             btnMostrarEmpleado2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMostrarEmpleado2.ForeColor = SystemColors.ControlText;
             btnMostrarEmpleado2.Location = new Point(857, 557);
             btnMostrarEmpleado2.Name = "btnMostrarEmpleado2";
             btnMostrarEmpleado2.Size = new Size(215, 45);
@@ -88,6 +89,7 @@
             // btmMostrarEmpleado1
             // 
             btmMostrarEmpleado1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btmMostrarEmpleado1.ForeColor = SystemColors.ControlText;
             btmMostrarEmpleado1.Location = new Point(857, 248);
             btmMostrarEmpleado1.Name = "btmMostrarEmpleado1";
             btmMostrarEmpleado1.Size = new Size(215, 45);
@@ -99,6 +101,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.Chocolate;
             button1.Location = new Point(46, 582);
             button1.Name = "button1";
             button1.Size = new Size(113, 35);
@@ -111,6 +114,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
             ClientSize = new Size(1122, 648);
             Controls.Add(button1);
             Controls.Add(listView1);
@@ -119,6 +123,7 @@
             Controls.Add(listView2);
             Controls.Add(btnMostrarEmpleado2);
             Controls.Add(btmMostrarEmpleado1);
+            ForeColor = SystemColors.ControlLightLight;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Filtrado1";
             Text = "Filtrado1";

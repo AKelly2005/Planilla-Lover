@@ -15,10 +15,10 @@ namespace PLANILLA_LOVERS
     {
         private GestorUsuarios gestorUsuarios;
 
-        public NuevoUsuario(GestorUsuarios gestorUsuarios) // Recibe la instancia existente
+        public NuevoUsuario(GestorUsuarios gestorUsuarios)
         {
             InitializeComponent();
-            this.gestorUsuarios = gestorUsuarios;  // Usar la instancia pasada
+            this.gestorUsuarios = gestorUsuarios; 
         }
 
         private void Agregarbtn_Click(object sender, EventArgs e)
@@ -74,6 +74,13 @@ namespace PLANILLA_LOVERS
             {
                 MessageBox.Show($"Error al agregar el usuario: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InicioSesion nuevoInicio = new InicioSesion(gestorUsuarios);
+            nuevoInicio.Show();
+            this.Hide();
         }
     }
 }

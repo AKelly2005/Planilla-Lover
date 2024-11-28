@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bienvenido));
             label1 = new Label();
             pbImagen = new PictureBox();
             button1 = new Button();
@@ -72,6 +73,7 @@
             Controls.Add(button1);
             Controls.Add(pbImagen);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Bienvenido";
             Text = "Bienvenido";
             Load += Bienvenido_Load;

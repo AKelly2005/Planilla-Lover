@@ -71,11 +71,10 @@ namespace PLANILLA_LOVERS
 
         private void nuevousuariobtn_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del Nuevo Usuario y pasar el gestor de usuarios
-            NuevoUsuario GoNuevoUser = new NuevoUsuario(gestorUsuarios);
+            NuevoUsuario GoUser = new NuevoUsuario(gestorUsuarios);
 
             // Mostrar el formulario del Nuevo Usuario
-            GoNuevoUser.Show();
+            GoUser.Show();
 
             // Ocultar el formulario actual
             this.Hide();
@@ -83,11 +82,10 @@ namespace PLANILLA_LOVERS
 
         private void nuevoAdminbtn_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del Nuevo Admin y pasar el gestor de usuarios
-            NuevoAdmin GoNuevoAdmin = new NuevoAdmin(gestorUsuarios);
+            Acces_Admincs GoAcces = new Acces_Admincs(gestorUsuarios);
 
-            // Mostrar el formulario del Nuevo Admin
-            GoNuevoAdmin.Show();
+            // Mostrar el formulario del Nuevo Usuario
+            GoAcces.Show();
 
             // Ocultar el formulario actual
             this.Hide();

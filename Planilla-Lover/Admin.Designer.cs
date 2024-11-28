@@ -165,6 +165,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Window;
             ClientSize = new Size(946, 450);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -179,6 +180,7 @@
             Controls.Add(label1);
             Controls.Add(txtHoras);
             Controls.Add(txtNombre);
+            ForeColor = Color.Black;
             Name = "Admin";
             Text = "Admin";
             ResumeLayout(false);

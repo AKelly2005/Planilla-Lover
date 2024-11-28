@@ -140,6 +140,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(btnCerrarSesion);
             Controls.Add(lblUsuarioTipo);
@@ -150,7 +151,9 @@
             Controls.Add(lblFecha);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ControlText;
             Name = "Menu";
+            RightToLeftLayout = true;
             Text = "Menu";
             Load += Menu_Load;
             ResumeLayout(false);
