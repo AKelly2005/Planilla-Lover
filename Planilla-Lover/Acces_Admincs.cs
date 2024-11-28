@@ -22,6 +22,7 @@ namespace Planilla_Lover
         public Acces_Admincs(GestorUsuarios gestorUsuarios)
         {
             InitializeComponent();
+            this.gestorUsuarios = gestorUsuarios;
         }
 
         // Evento del botón para verificar el código

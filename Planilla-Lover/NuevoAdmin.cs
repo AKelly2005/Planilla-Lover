@@ -14,7 +14,7 @@ namespace PLANILLA_LOVERS
     public partial class NuevoAdmin : Form
     {
         private GestorUsuarios gestorUsuarios;
-        public NuevoAdmin(GestorUsuarios gestorUsuarios) // Recibe la instancia existente
+        public NuevoAdmin(GestorUsuarios gestorUsuarios)
         {
             InitializeComponent();
             this.gestorUsuarios = gestorUsuarios;  // Usar la instancia pasada

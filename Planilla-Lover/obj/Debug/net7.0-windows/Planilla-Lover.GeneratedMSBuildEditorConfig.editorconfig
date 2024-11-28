@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Planilla_Lover
-build_property.ProjectDir = C:\Users\aidan\source\repos\PLANILLA-LOVER\Planilla-Lover\
+build_property.ProjectDir = C:\Users\aidan\source\repos\Planilla-Lover\Planilla-Lover\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
