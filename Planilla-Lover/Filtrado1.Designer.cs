@@ -1,4 +1,4 @@
-﻿namespace SextoSistematico
+﻿namespace Planilla_Lover
 {
     partial class Filtrado1
     {

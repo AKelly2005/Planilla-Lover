@@ -33,16 +33,44 @@ namespace PLANILLA_LOVERS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Captura de datos
+            // Verificar que los campos no estén vacíos
             string nombre = txtNombre.Text;
             string Cargo = txtCargo.Text;
-            double horas = double.Parse(txtHoras.Text);
-            double tarifa = double.Parse(txtTarifa.Text);
-            double horasExtra = double.Parse(txtHExtra.Text);
+            string horasText = txtHoras.Text;
+            string tarifaText = txtTarifa.Text;
+            string horasExtraText = txtHExtra.Text;
+
+            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(Cargo) ||
+                string.IsNullOrWhiteSpace(horasText) || string.IsNullOrWhiteSpace(tarifaText) ||
+                string.IsNullOrWhiteSpace(horasExtraText))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            double horas, tarifa, horasExtra;
+
+            // Intentar convertir los valores numéricos
+            if (!double.TryParse(horasText, out horas))
+            {
+                MessageBox.Show("Por favor, ingrese un valor numérico válido para las horas trabajadas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!double.TryParse(tarifaText, out tarifa))
+            {
+                MessageBox.Show("Por favor, ingrese un valor numérico válido para la tarifa por hora.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!double.TryParse(horasExtraText, out horasExtra))
+            {
+                MessageBox.Show("Por favor, ingrese un valor numérico válido para las horas extras.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             // Creación del objeto según el tipo
             Empleado empleado = new EmpleadoCompleto();
-
             empleado.Nombre = nombre;
             empleado.Cargo = Cargo;
             empleado.HorasTrabajadas = horas;
@@ -66,8 +94,6 @@ namespace PLANILLA_LOVERS
 
             // Ocultar el formulario actual (Form1)
             this.Hide();
-
-
         }
     }
 }

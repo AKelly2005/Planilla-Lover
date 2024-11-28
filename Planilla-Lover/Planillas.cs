@@ -40,6 +40,11 @@ namespace Planilla_Lover
             var property = typeof(T).GetProperty("Usuario");
             return items.FirstOrDefault(item => (int)property.GetValue(item) == usuario);
         }
+
+        internal IEnumerable<object> Where(Func<object, bool> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public abstract class Empleado

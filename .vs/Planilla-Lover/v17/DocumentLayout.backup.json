@@ -98,22 +98,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "filtrado.cs",
-              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\filtrado.cs",
-              "RelativeDocumentMoniker": "Planilla-Lover\\filtrado.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\filtrado.cs",
-              "RelativeToolTip": "Planilla-Lover\\filtrado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T04:52:30.006Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -141,6 +127,28 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "filtrado.cs",
+              "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\filtrado.cs",
+              "RelativeDocumentMoniker": "Planilla-Lover\\filtrado.cs",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\filtrado.cs",
+              "RelativeToolTip": "Planilla-Lover\\filtrado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T04:52:30.006Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -198,8 +206,8 @@
               "Title": "Menu.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Menu.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Planilla-Lover\\Menu.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Planilla-Lover\\Menu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T03:30:49.042Z",
               "EditorCaption": " [Dise\u00F1o]"
@@ -248,20 +256,12 @@
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs",
               "RelativeDocumentMoniker": "Planilla-Lover\\Menu.cs",
-              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs*",
-              "RelativeToolTip": "Planilla-Lover\\Menu.cs*",
+              "ToolTip": "C:\\Users\\aidan\\source\\repos\\Planilla-Lover\\Planilla-Lover\\Menu.cs",
+              "RelativeToolTip": "Planilla-Lover\\Menu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T05:43:09.952Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
             },
             {
               "$type": "Document",

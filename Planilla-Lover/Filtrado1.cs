@@ -5,19 +5,21 @@ using System.Linq;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace SextoSistematico
+namespace Planilla_Lover
 {
     public partial class Filtrado1 : Form
     {
         private Planilla<Empleado> empleados;
 
-        public Filtrado1()
+        // Modificamos el constructor para recibir la lista de empleados
+        public Filtrado1(Planilla<Empleado> empleados)
         {
             InitializeComponent();
+            this.empleados = empleados; // Asignamos la lista de empleados
             ConfigurarListView1();
             ConfigurarListView2();
-
-
+            MostrarEmpleadosConIRMayor(); // Mostrar los empleados con IR mayor que 0
+            MostrarEmpleadosSinIR(); // Mostrar los empleados sin IR
         }
 
         private void ConfigurarListView1()
@@ -54,7 +56,7 @@ namespace SextoSistematico
             listView1.Items.Clear();
 
             // Filtrar empleados con IR mayor
-            var empleadosConIR = empleados.Where(e => e.IR > 0);
+            var empleadosConIR = empleados.ObtenerTodos().Where(e => e.IR > 0);
             foreach (var empleado in empleadosConIR)
             {
                 var item = new ListViewItem(new[]
@@ -64,9 +66,9 @@ namespace SextoSistematico
                     empleado.HorasTrabajadas.ToString(),
                     empleado.TarifaPorHora.ToString("C"),
                     empleado.HorasExtras.ToString(),
-                    empleado.INSS,
+                    empleado.INSS.ToString("C"),
                     empleado.IR.ToString("C"),
-                    empleado.NetoObtenido.ToString("C")
+                    empleado.Neto_Obtenido.ToString("C")
                 });
                 listView1.Items.Add(item);
             }
@@ -78,8 +80,8 @@ namespace SextoSistematico
             listView2.Items.Clear();
 
             // Filtrar empleados sin IR
-            var MostrarEmpleadosSinIR = empleados.Where(e => e.IR < 1);
-            foreach (var empleado in MostrarEmpleadosSinIR)
+            var empleadosSinIR = empleados.ObtenerTodos().Where(e => e.IR < 1);
+            foreach (var empleado in empleadosSinIR)
             {
                 var item = new ListViewItem(new[]
                 {
@@ -88,13 +90,12 @@ namespace SextoSistematico
                     empleado.HorasTrabajadas.ToString(),
                     empleado.TarifaPorHora.ToString("C"),
                     empleado.HorasExtras.ToString(),
-                    empleado.INSS,
+                    empleado.INSS.ToString("C"),
                     empleado.IR.ToString("C"),
-                    empleado.NetoObtenido.ToString("C")
+                    empleado.Neto_Obtenido.ToString("C")
                 });
                 listView2.Items.Add(item);
             }
         }
-
     }
 }

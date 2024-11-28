@@ -7,9 +7,6 @@
     <Compile Update="Bienvenido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="filtrado.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Filtrado1.cs">
       <SubType>Form</SubType>
     </Compile>
